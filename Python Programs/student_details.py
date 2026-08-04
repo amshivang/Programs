@@ -1,0 +1,13 @@
+name = input("Enter Name: ")
+roll_no = input("Enter Roll Number: ")
+branch = input("Enter Branch: ")
+semester = input("Enter Semester: ")
+cgpa = input("Enter CGPA: ")
+
+print("\n-------- Student Details --------")
+print(f"Name      : {name}")
+print(f"Roll No.  : {roll_no}")
+print(f"Branch    : {branch}")
+print(f"Semester  : {semester}")
+print(f"CGPA      : {cgpa}")
+print("---------------------------------")

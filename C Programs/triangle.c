@@ -1,0 +1,8 @@
+- Definition of wave and wave motion
+- Difference between longitudinal and transverse waves
+- Nature and properties of electromagnetic waves
+- Reflection, refraction, polarization and diffraction of light
+- Refractive index and total internal reflection of light
+- Microscopes and astronomical telescopes (reflecting and refracting) and their magnifying powers
+- Physical and chromatic aberrations
+- Propagation of sound wave and their properties
