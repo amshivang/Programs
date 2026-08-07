@@ -14,3 +14,5 @@
 | **`sum_even_elements.cpp`** | Array | $O(N)$ | Calculates the sum of only even numbers present in an array. |
 | **`stack.cpp`** | Stack | $O(1)$ ops | Array-based implementation of Stack supporting push, pop, peek, isEmpty, and isFull. |
 | **`postfix_evaluation.cpp`** | Stack | $O(N)$ | Evaluates Reverse Polish Notation (postfix) arithmetic expressions using a stack. |
+| **`queue.cpp`** | Queue | $O(1)$ ops | Array-based implementation of a standard Queue supporting insert, delete, and display. |
+| **`stack_class.cpp`** | Stack | $O(1)$ ops | Object-oriented (class-based) implementation of a Stack with dynamically allocated array. |
