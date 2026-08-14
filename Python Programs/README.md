@@ -56,3 +56,8 @@
 | **`volume_of_cylinder.py`** | Math | Calculates volume of a cylinder using formula $V = \pi r^2 h$. |
 | **`vowels_and_consonants_count.py`** | String | Counts total vowels and consonants in an input string. |
 | **`welcome_user.py`** | Basics | Prompts for username and displays a personalized welcome greeting. |
+| **`analyze_numbers.py`** | Math | Analyzes a list of integers to separate evens and odds, computing sums and counts. |
+| **`employee_salary.py`** | Math | Computes salary statistics (average, highest, lowest) using variable-length arguments. |
+| **`generate_bill.py`** | Logic | Calculates a retail bill with totals, averages, and conditional discounts. |
+| **`second_largest.py`** | Logic | Finds the second largest unique integer from a variable-length list of arguments. |
+| **`student_result.py`** | Logic | Computes a student's total marks, percentage, pass/fail status, and highest scoring subject. |

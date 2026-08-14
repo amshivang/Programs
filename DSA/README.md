@@ -16,3 +16,4 @@
 | **`postfix_evaluation.cpp`** | Stack | $O(N)$ | Evaluates Reverse Polish Notation (postfix) arithmetic expressions using a stack. |
 | **`queue.cpp`** | Queue | $O(1)$ ops | Array-based implementation of a standard Queue supporting insert, delete, and display. |
 | **`stack_class.cpp`** | Stack | $O(1)$ ops | Object-oriented (class-based) implementation of a Stack with dynamically allocated array. |
+| **`circular_queue.cpp`** | Queue | $O(1)$ ops | Array-based implementation of a Circular Queue data structure. |
