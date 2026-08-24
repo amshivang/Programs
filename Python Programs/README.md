@@ -61,3 +61,7 @@
 | **`generate_bill.py`** | Logic | Calculates a retail bill with totals, averages, and conditional discounts. |
 | **`second_largest.py`** | Logic | Finds the second largest unique integer from a variable-length list of arguments. |
 | **`student_result.py`** | Logic | Computes a student's total marks, percentage, pass/fail status, and highest scoring subject. |
+| **`analyze_number.py`** | Logic | Wrapper script calling the analyze_numbers module to print results. |
+| **`circle_area.py`** | Math | Calculates the area and circumference of a circle given its radius. |
+| **`main.py`** | Logic | Menu-driven program integrating other modules for number and student analysis. |
+| **`rectangle_area.py`** | Math | Calculates the area and perimeter of a rectangle. |

@@ -17,3 +17,4 @@
 | **`queue.cpp`** | Queue | $O(1)$ ops | Array-based implementation of a standard Queue supporting insert, delete, and display. |
 | **`stack_class.cpp`** | Stack | $O(1)$ ops | Object-oriented (class-based) implementation of a Stack with dynamically allocated array. |
 | **`circular_queue.cpp`** | Queue | $O(1)$ ops | Array-based implementation of a Circular Queue data structure. |
+| **`queue_linked_list.cpp`** | Queue | $O(1)$ ops | Linked-list based implementation of a Queue supporting dynamic memory allocation. |
