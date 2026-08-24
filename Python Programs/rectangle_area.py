@@ -1,6 +1,12 @@
+def calculate_perimeter(length, breadth):
+    return 2 * (length + breadth)
+
+def calculate_area(length, breadth):
+    return length * breadth
+
 def calculate_rectangle(length, breadth):
-    perimeter = 2 * (length + breadth)
-    area = length * breadth
+    perimeter = calculate_perimeter(length, breadth)
+    area = calculate_area(length, breadth)
     return perimeter, area
 
 if __name__ == '__main__':
