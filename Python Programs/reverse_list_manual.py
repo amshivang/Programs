@@ -1,9 +1,7 @@
 items = input("Enter list elements separated by space: ").split()
-left = 0
-right = len(items) - 1
-while left < right:
-    items[left], items[right] = items[right], items[left]
-    left += 1
-    right -= 1
+reversed_items = []
 
-print(f"Reversed list: {items}")
+for item in items:
+    reversed_items.insert(0, item)
+
+print(f"Reversed list: {reversed_items}")

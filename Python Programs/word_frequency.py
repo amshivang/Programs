@@ -3,7 +3,15 @@ words = sentence.split()
 
 freq = {}
 for word in words:
-    freq[word] = freq.get(word, 0) + 1
+    if word in freq:
+        freq[word] += 1
+    else:
+        freq[word] = 1
 
-output = ", ".join(f"{word}: {count}" for word, count in freq.items())
-print(f"Output: {output}")
+print("Output: ", end="")
+first = True
+for word, count in freq.items():
+    if not first:
+        print(", ", end="")
+    print(f"{word}: {count}", end="")
+    first = False
