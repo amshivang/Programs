@@ -65,3 +65,11 @@
 | **`circle_area.py`** | Math | Calculates the area and circumference of a circle given its radius. |
 | **`main.py`** | Logic | Menu-driven program integrating other modules for number and student analysis. |
 | **`rectangle_area.py`** | Math | Calculates the area and perimeter of a rectangle. |
+| **`fruit_list_operations.py`** | Basics | Demonstrates basic list operations like accessing and updating elements. |
+| **`remove_duplicates_preserve_order.py`** | Logic | Removes duplicate integers from a list while preserving their original order. |
+| **`reverse_list_manual.py`** | Logic | Reverses a list manually using a two-pointer approach instead of built-in functions. |
+| **`smallest_and_largest.py`** | Math | Finds the smallest and largest integers from a list without using built-in functions. |
+| **`string_manipulation.py`** | String | Performs multiple string manipulations: case conversions, reversal, and vowel counting. |
+| **`string_slicing_and_indexing.py`** | String | Demonstrates string slicing techniques like extracting substrings and reversing. |
+| **`sum_average_without_sum.py`** | Math | Calculates the sum and average of a list using a loop instead of built-in functions. |
+| **`word_frequency.py`** | String | Counts and displays the frequency of each word in a given sentence using a dictionary. |
