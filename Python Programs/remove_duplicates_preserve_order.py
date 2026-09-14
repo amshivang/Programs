@@ -7,4 +7,5 @@ for num in numbers:
         unique_numbers.append(num)
 
 print(f"Original list: {numbers}")
-print(f"List without duplicates: {unique_numbers}")  
+print(f"List without duplicates: {unique_numbers}")   
+
