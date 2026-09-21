@@ -9,5 +9,4 @@ while left < right:
     items[right] = temp
     left += 1
     right -= 1
-
-print(f"Reversed list: {items}")  
+print(f"Reversed list: {items}") 

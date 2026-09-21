@@ -73,3 +73,9 @@
 | **`string_slicing_and_indexing.py`** | String | Demonstrates string slicing techniques like extracting substrings and reversing. |
 | **`sum_average_without_sum.py`** | Math | Calculates the sum and average of a list using a loop instead of built-in functions. |
 | **`word_frequency.py`** | String | Counts and displays the frequency of each word in a given sentence using a dictionary. |
+| **`celsius_to_fahrenheit.py`** | Math | Converts a given temperature from Celsius to Fahrenheit. |
+| **`dict_mutation_vs_rebinding.py`** | Basics | Demonstrates the difference between mutating a dictionary and rebinding its reference in a function. |
+| **`factorial_function.py`** | Math | Calculates the factorial of a number using a dedicated function and iterative loop. |
+| **`list_mutation.py`** | Basics | Demonstrates list mutation by modifying a list passed to a function using pop(). |
+| **`max_of_two.py`** | Math | Finds the maximum of two numbers using a function with a conditional expression. |
+| **`string_reassignment.py`** | Basics | Demonstrates that strings are immutable and reassignment inside a function doesn't affect the original. |
