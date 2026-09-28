@@ -79,3 +79,7 @@
 | **`list_mutation.py`** | Basics | Demonstrates list mutation by modifying a list passed to a function using pop(). |
 | **`max_of_two.py`** | Math | Finds the maximum of two numbers using a function with a conditional expression. |
 | **`string_reassignment.py`** | Basics | Demonstrates that strings are immutable and reassignment inside a function doesn't affect the original. |
+| **`decorator_double_result.py`** | Logic | Demonstrates a Python decorator that doubles the return value of a function. |
+| **`decorator_show_info.py`** | Logic | Demonstrates a Python decorator that prints messages before and after function execution. |
+| **`generator_countdown.py`** | Logic | Uses a Python generator function to yield a countdown sequence from N to 1. |
+| **`generator_even_numbers.py`** | Logic | Uses a Python generator function to yield even numbers up to a specified limit. |
