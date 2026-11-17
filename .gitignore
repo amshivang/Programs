@@ -1,0 +1,41 @@
+# Compiled Object & Binary Files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.bin
+
+# C/C++ Executables & Debuggers
+*.dSYM/
+.gdb_history
+calc
+
+# Java Compiled Files
+*.class
+*.jar
+*.war
+*.ear
+
+# Python Bytecode & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE & Editor Metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Gemini / Antigravity workspace files
+.gemini/
