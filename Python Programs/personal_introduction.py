@@ -1,6 +1,6 @@
 name = "Shivang Shukla"
 course = "B.Tech"
-college = "UPSIFS"
+college = "University"
 city = "Lucknow"
 
 print(f"Name: {name}")

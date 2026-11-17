@@ -18,7 +18,7 @@ class College
 int main()
 {
     College c;
-    c.collegeName = "Uttar Pradesh State Institute of Forensic Science";
-    c.Code = "UPSFIS";
+    c.collegeName = "College of Engineering & Technology";
+    c.Code = "CET";
     c.display();
 }   

@@ -7,14 +7,14 @@
   </p>
 
   # 📚 Academic Coursework & Algorithm Compendium
-  ### CSE Cybersecurity Syllabus Implementations @ UPSIFS
+  ### CSE Cybersecurity Syllabus & Algorithm Implementations
 
   <p>
     <em>A structured repository of 160+ computer science programs, algorithm implementations, and academic assignments covering C, C++, Data Structures & Algorithms, Java, and Python.</em>
   </p>
 
   <p>
-    <a href="#"><img src="https://img.shields.io/badge/Institution-UPSIFS%20Lucknow-002147?style=for-the-badge&logo=shield&logoColor=white" alt="UPSIFS"/></a>
+    <a href="#"><img src="https://img.shields.io/badge/Curriculum-CSE%20Cybersecurity-002147?style=for-the-badge&logo=shield&logoColor=white" alt="Curriculum"/></a>
     <a href="#"><img src="https://img.shields.io/badge/Discipline-CSE%20Cybersecurity-38BDF8?style=for-the-badge" alt="Discipline"/></a>
     <a href="#"><img src="https://img.shields.io/badge/Programs-160%2B%20Solutions-059669?style=for-the-badge" alt="Total Programs"/></a>
     <a href="#"><img src="https://img.shields.io/badge/Languages-C%20%7C%20C%2B%2B%20%7C%20Java%20%7C%20Python-F59E0B?style=for-the-badge" alt="Languages"/></a>
@@ -35,7 +35,7 @@
 
 ## 📌 Overview
 
-This repository serves as the official academic code compendium and algorithm laboratory for **Shivang Shukla** in the **Computer Science & Engineering (Cybersecurity)** curriculum at the **Uttar Pradesh State Institute of Forensic Sciences (UPSIFS)**, Lucknow.
+This repository serves as the official academic code compendium and algorithm laboratory for **Shivang Shukla** in the **Computer Science & Engineering (Cybersecurity)** curriculum.
 
 It catalogues foundational programming constructs, memory management with low-level pointers, Object-Oriented software architectures, asymptotic complexity analyses, and practical Data Structures & Algorithms across four primary languages: **C**, **C++**, **Java**, and **Python**.
 
@@ -112,7 +112,7 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
 <div align="center">
   <p><strong>Shivang Shukla</strong></p>
-  <p><em>Cybersecurity & Digital Forensics Scholar @ UPSIFS (Uttar Pradesh State Institute of Forensic Sciences)</em></p>
+  <p><em>Cybersecurity & Digital Forensics Scholar</em></p>
 
   <p>
     <a href="https://github.com/amshivang"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
