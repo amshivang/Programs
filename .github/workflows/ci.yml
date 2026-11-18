@@ -1,0 +1,48 @@
+name: Coursework Code Quality & Compilation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lint-python:
+    name: Verify Python Syntax
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile and Validate Python Files
+        run: |
+          find "Python Programs" -name "*.py" -exec python -m py_compile {} +
+
+  verify-c-cpp:
+    name: Verify C & C++ Compilation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Compile C Programs
+        run: |
+          for f in "C Programs"/*.c; do
+            if [ -f "$f" ]; then
+              gcc -std=c11 -fsyntax-only "$f" || exit 1
+            fi
+          done
+
+      - name: Compile C++ Programs
+        run: |
+          for f in "C++ Programs"/*.cpp; do
+            if [ -f "$f" ]; then
+              g++ -std=c++17 -fsyntax-only "$f" || exit 1
+            fi
+          done
