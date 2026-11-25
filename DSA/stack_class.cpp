@@ -19,6 +19,9 @@ public:
         delete[] arr;
     }
 
+    Stack(const Stack&) = delete;
+    Stack& operator=(const Stack&) = delete;
+
     void push(int value) {
         if (top == max_size - 1) {
             cout << "Stack Overflow! Cannot push " << value << endl;
@@ -68,7 +71,9 @@ int main() {
         cout << "3. Display" << endl;
         cout << "4. Exit" << endl;
         cout << "Enter your choice: ";
-        cin >> choice;
+        if (!(cin >> choice)) {
+            break;
+        }
 
         switch (choice) {
             case 1:

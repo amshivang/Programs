@@ -58,6 +58,15 @@ void display() {
   cout << endl;
 }
 
+void clearQueue() {
+  while (front != nullptr) {
+    Node* temp = front;
+    front = front->next;
+    delete temp;
+  }
+  rear = nullptr;
+}
+
 int main() {
   int choice, value;
 
@@ -68,7 +77,9 @@ int main() {
     cout << "3. Display" << endl;
     cout << "4. Exit" << endl;
     cout << "Enter your choice: ";
-    cin >> choice;
+    if (!(cin >> choice)) {
+      break;
+    }
 
     switch (choice) {
     case 1:
@@ -87,6 +98,7 @@ int main() {
 
     case 4:
       cout << "Exiting program." << endl;
+      clearQueue();
       return 0;
 
     default:
@@ -95,5 +107,6 @@ int main() {
     }
   }
 
+  clearQueue();
   return 0;
 }

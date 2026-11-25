@@ -1,12 +1,15 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
     int n;
     cout << "Enter the size of array: ";
-    cin >> n;
-    int arr[n];
+    if (!(cin >> n) || n <= 0) {
+        return 0;
+    }
+    vector<int> arr(n);
     int sum = 0;
     cout << "Enter the elements in the array: ";
     for (int i = 0; i < n; i++) {

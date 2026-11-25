@@ -1,16 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    int a,b,c,d,e,f;
-    float g;
-    printf("Enter subject of 5 number: \n");
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
-    scanf("%d", &d);
-    scanf("%d", &e);
-    scanf("%d", &f);
-    g = (a + b + c+ d + e + f) * 100.0 / 500;
-    printf("The percentage is %f \n", g);
+int main(void) {
+    int a, b, c, d, e;
+    printf("Enter marks of 5 subjects:\n");
+    if (scanf("%d %d %d %d %d", &a, &b, &c, &d, &e) != 5) {
+        printf("Invalid input.\n");
+        return 1;
+    }
+    double pct = (a + b + c + d + e) * 100.0 / 500.0;
+    printf("The percentage is %.2f%%\n", pct);
     return 0;
 }

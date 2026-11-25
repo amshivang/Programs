@@ -1,23 +1,42 @@
-def student_result(**kwargs):
+def evaluate_result(**kwargs):
     if not kwargs:
-        return
-        
+        return None
+
     total_marks = sum(kwargs.values())
     percentage = (total_marks / (len(kwargs) * 100)) * 100
     highest_subject = max(kwargs, key=kwargs.get)
     all_passed = all(mark >= 40 for mark in kwargs.values())
     result_status = 'Pass' if all_passed else 'Fail'
-    
-    print(f'Total Marks: {total_marks:.2f}')
-    print(f'Percentage: {percentage:.2f}%')
-    print(f'Highest Scoring Subject: {highest_subject} ({kwargs[highest_subject]:.2f})')
-    print(f'Result: {result_status}')
+    return {
+        'total_marks': total_marks,
+        'percentage': percentage,
+        'highest_subject': highest_subject,
+        'highest_marks': kwargs[highest_subject],
+        'status': result_status,
+    }
 
-num_subjects = int(input('Enter number of subjects: '))
-subject_marks = {}
-for i in range(1, num_subjects + 1):
-    sub_name = input(f'Enter subject {i} name: ').strip()
-    marks = float(input(f'Enter marks for {sub_name}: '))
-    subject_marks[sub_name] = marks
 
-student_result(**subject_marks)
+def student_result(**kwargs):
+    result = evaluate_result(**kwargs)
+    if not result:
+        return None
+
+    print(f"Total Marks: {result['total_marks']:.2f}")
+    print(f"Percentage: {result['percentage']:.2f}%")
+    print(
+        f"Highest Scoring Subject: {result['highest_subject']} "
+        f"({result['highest_marks']:.2f})"
+    )
+    print(f"Result: {result['status']}")
+    return result
+
+
+if __name__ == '__main__':
+    num_subjects = int(input('Enter number of subjects: '))
+    subject_marks = {}
+    for i in range(1, num_subjects + 1):
+        sub_name = input(f'Enter subject {i} name: ').strip()
+        marks = float(input(f'Enter marks for {sub_name}: '))
+        subject_marks[sub_name] = marks
+
+    student_result(**subject_marks)

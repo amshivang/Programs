@@ -6,5 +6,5 @@
 | **`root.java`** | `root` | Solves quadratic equations $ax^2 + bx + c = 0$ using `Math.sqrt()` and `Math.pow()`. |
 | **`square.java`** | `square` | Calculates the square of an input integer and computes geometric square properties. |
 | **`testyes.java`** | `testyes` | Introductory conditional validation exercise in Java. |
-| **`wheel.java`** | `wheel` | Wheel object representation evaluating radius, diameter, and circumference. |
+| **`wheel.java`** | `wheel` | Computes the maximum reachable value on a modular cyclic wheel `(a + k*b) mod l`. |
 | **`yesoryes.java`** | `yesoryes` | String decision evaluator checking target key responses. |

@@ -4,6 +4,6 @@ using namespace std;
 int main()
 { 
     cout << "Shivang Shukla" << endl;
-    cout << "251542004020";
+    cout << "Student ID";
     return 0;
 }

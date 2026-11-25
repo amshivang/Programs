@@ -12,7 +12,7 @@ class Student
     {
         cout << "Enter Name: ";
         getline(cin, name);
-        cout << "Enter Coruse: ";
+        cout << "Enter Course: ";
         getline(cin, course);
         cout << "Enter Age: ";
         cin >> age;

@@ -7,34 +7,31 @@ try:
     else:
         lakhs = salary / 100000.0
 
-        if 0 <= lakhs <= 1:
-            print('k')
+        # Determine tax rate based on salary brackets
+        if lakhs < 5:
+            tax_percent = 0
+        elif lakhs <= 10:
+            tax_percent = 10
+        elif lakhs <= 20:
+            tax_percent = 20
         else:
-            # Determine tax rate based on salary brackets
-            if 5 <= lakhs <= 10:
-                tax_percent = 10
-            elif 11 <= lakhs <= 20:
-                tax_percent = 20
-            elif lakhs > 20:
-                tax_percent = 30
-            else:
-                tax_percent = 0  # No tax for other brackets (e.g., 1-5 lakh, 10-11 lakh)
+            tax_percent = 30
 
-            hra = 0.10 * salary
-            da = 0.05 * salary
-            pf = 0.03 * salary
-            tax = (tax_percent / 100.0) * salary
+        hra = 0.10 * salary
+        da = 0.05 * salary
+        pf = 0.03 * salary
+        tax = (tax_percent / 100.0) * salary
 
-            total_deductions = hra + da + pf + tax
-            in_hand_salary = salary - total_deductions
+        total_deductions = hra + da + pf + tax
+        in_hand_salary = salary - total_deductions
 
-            print(f"\n--- Salary Breakdown ---")
-            print(f"Gross Salary       : Rs. {salary:,.2f}")
-            print(f"HRA Deduction (10%): Rs. {hra:,.2f}")
-            print(f"DA Deduction (5%)  : Rs. {da:,.2f}")
-            print(f"PF Deduction (3%)  : Rs. {pf:,.2f}")
-            print(f"Tax Deduction ({tax_percent}%): Rs. {tax:,.2f}")
-            print(f"------------------------")
-            print(f"In-Hand Salary     : Rs. {in_hand_salary:,.2f}")
+        print("\n--- Salary Breakdown ---")
+        print(f"Gross Salary       : Rs. {salary:,.2f}")
+        print(f"HRA Deduction (10%): Rs. {hra:,.2f}")
+        print(f"DA Deduction (5%)  : Rs. {da:,.2f}")
+        print(f"PF Deduction (3%)  : Rs. {pf:,.2f}")
+        print(f"Tax Deduction ({tax_percent}%): Rs. {tax:,.2f}")
+        print("------------------------")
+        print(f"In-Hand Salary     : Rs. {in_hand_salary:,.2f}")
 except ValueError:
     print("Invalid input. Please enter a valid number.")

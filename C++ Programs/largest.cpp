@@ -14,12 +14,12 @@ using namespace std;
         }
         void lar()
         {
-            if(a > b && a > c)
-            cout << a << " is largest";
-            else if(b > a && b > c)
-            cout << b << " is largest";
-            else 
-            cout << c << " is largest";
+            if (a >= b && a >= c)
+                cout << a << " is largest" << endl;
+            else if (b >= a && b >= c)
+                cout << b << " is largest" << endl;
+            else
+                cout << c << " is largest" << endl;
         }
     };
 
@@ -27,4 +27,5 @@ using namespace std;
         Largest l;
         l.input();
         l.lar();
+        return 0;
     }

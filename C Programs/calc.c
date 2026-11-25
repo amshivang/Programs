@@ -33,8 +33,15 @@ int main() {
         case 3: {
             int a, b;
             printf("Enter two numbers to be divided:\n");
-            scanf("%d %d", &a, &b);
+            if (scanf("%d %d", &a, &b) != 2) {
+                printf("Invalid input!\n");
+                break;
+            }
+            if (b == 0) {
+                printf("Error: Division by zero is not allowed.\n");
+            } else {
                 printf("Division: %d\n", division(a, b));
+            }
             break;
         }
         case 4: {
@@ -46,6 +53,6 @@ int main() {
         }
         default:
             printf("Invalid choice!\n");
-        return 0;
     }
+    return 0;
 }

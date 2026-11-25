@@ -1,12 +1,15 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
     int n;
     cout << "Enter the size of array: ";
-    cin >> n;
-    int arr[n];
+    if (!(cin >> n) || n <= 0) {
+        return 0;
+    }
+    vector<int> arr(n);
     cout << "Enter the elements in the array: ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
@@ -15,7 +18,7 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
-    int stack[n];
+    vector<int> stack(n * 2);
     int top = -1;
     stack[++top] = 0;
     stack[++top] = n - 1;

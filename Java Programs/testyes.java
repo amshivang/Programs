@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class yesoryes
+public class testyes
 {
 	public static void main(String[] args)
 	{

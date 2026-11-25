@@ -25,7 +25,8 @@ int pop() {
 }
 
 int evaluatePostfix(string exp) {
-    for (int i = 0; i < exp.length(); i++) {
+    top = -1;
+    for (size_t i = 0; i < exp.length(); i++) {
         char c = exp[i];
         
         if (c == ' ') {
@@ -42,6 +43,10 @@ int evaluatePostfix(string exp) {
             push(num);
         }
         else if (c == '+' || c == '-' || c == '*' || c == '/') {
+            if (top < 1) {
+                cout << "Invalid postfix expression!" << endl;
+                return 0;
+            }
             int val2 = pop();
             int val1 = pop();
             
@@ -49,8 +54,12 @@ int evaluatePostfix(string exp) {
                 case '+': push(val1 + val2); break;
                 case '-': push(val1 - val2); break;
                 case '*': push(val1 * val2); break;
-                case '/': 
-                    push(val1 / val2); 
+                case '/':
+                    if (val2 == 0) {
+                        cout << "Error: Division by zero!" << endl;
+                        return 0;
+                    }
+                    push(val1 / val2);
                     break;
             }
         }

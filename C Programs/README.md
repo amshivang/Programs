@@ -3,7 +3,7 @@
 | **`5digitsum.c`** | Calculates the sum of all digits of a 5-digit integer input. |
 | **`Armstrong_Number.c`** | Checks whether a given integer is an Armstrong number (sum of cubes of digits equals the number). |
 | **`FirstCprogram.c`** | Introductory C program demonstrating basic formatted output using `printf`. |
-| **`add_two_numbers_using_pointers`** | Demonstrates pointer dereferencing by adding two numbers using memory addresses. |
+| **`add_two_numbers_using_pointers.c`** | Demonstrates pointer dereferencing by adding two numbers using memory addresses. |
 | **`areavol.c`** | Calculates the area and volume of basic geometric shapes (cubes, cylinders, spheres). |
 | **`binary.c`** | Converts a decimal integer into its binary equivalent. |
 | **`calc.c`** | Menu-driven C calculator supporting addition, subtraction, multiplication, and division. |
@@ -26,6 +26,5 @@
 | **`secondprg.c`** | Introductory program demonstrating variable declarations and user input via `scanf`. |
 | **`squarecircle.c`** | Computes perimeter/circumference and area for square and circle shapes. |
 | **`swap_two_numbers_using_pointers.c`** | Swaps values of two variables in-place using pointer dereferencing. |
-| **`tempCodeRunnerFile.c`** | Temporary C execution script. |
 | **`triangle.c`** | Checks triangle validity and classifies it as equilateral, isosceles, or scalene. |
 | **`variablesize.c`** | Uses `sizeof` operator to print memory allocation sizes for C primitive data types. |

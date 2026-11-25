@@ -1,12 +1,15 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
     int n;
     cout << "Enter the size of array: ";
-    cin >> n;
-    int arr[n];
+    if (!(cin >> n) || n <= 0) {
+        return 0;
+    }
+    vector<int> arr(n);
     cout << "Enter the elements in the array: ";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
@@ -27,8 +30,8 @@ int main() {
             }
             int n1 = mid - left_start + 1;
             int n2 = right_end - mid;
-            int L[n1];
-            int R[n2];
+            vector<int> L(n1);
+            vector<int> R(n2);
             for (int i = 0; i < n1; i++) {
                 L[i] = arr[left_start + i];
             }

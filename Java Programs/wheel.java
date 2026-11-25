@@ -13,10 +13,18 @@ public class wheel
 		l = in.nextInt();
 		a = in.nextInt();
 		b = in.nextInt();
-		int c = a;
-		while ((a + b) % l != a)
-			a = (a+b)%l;
-		System.out.println(a);
+		int best = a;
+		if (l > 0) {
+			int step = Math.floorMod(b, l);
+			int cur = Math.floorMod(a + step, l);
+			while (cur != a) {
+				if (cur > best) {
+					best = cur;
+				}
+				cur = Math.floorMod(cur + step, l);
+			}
+		}
+		System.out.println(best);
 	}
 	}
 }

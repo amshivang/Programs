@@ -6,8 +6,8 @@ try:
     if num < 0:
         print("Armstrong numbers are defined for non-negative integers.")
     else:
-        # Number of digits
-        n = len(num_str)
+        digits = str(num)
+        n = len(digits)
         temp = num
         digit_sum = 0
 
@@ -18,9 +18,9 @@ try:
 
         if digit_sum == num:
             print(f"Yes, {num} is an Armstrong number.")
-            print(f"Calculation: {' + '.join(f'{d}^{n}' for d in num_str)} = {digit_sum}")
+            print(f"Calculation: {' + '.join(f'{d}^{n}' for d in digits)} = {digit_sum}")
         else:
             print(f"No, {num} is NOT an Armstrong number.")
-            print(f"Calculation: {' + '.join(f'{d}^{n}' for d in num_str)} = {digit_sum} (not equal to {num})")
+            print(f"Calculation: {' + '.join(f'{d}^{n}' for d in digits)} = {digit_sum} (not equal to {num})")
 except ValueError:
     print("Invalid input. Please enter a valid non-negative integer.")

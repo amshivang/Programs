@@ -15,7 +15,7 @@ public:
         for(int i=0;i<5;i++) 
             sum += marks[i]; 
  
-        cout << "Average = " << sum/5; 
+        cout << "Average = " << (sum / 5.0) << endl; 
     } 
 }; 
  
@@ -23,4 +23,5 @@ int main() {
     Marks m; 
     m.input(); 
     m.average(); 
+    return 0;
 }

@@ -1,13 +1,16 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
     int n;
     cout << "Enter the size of array: ";
-    cin >> n;
-    int arr1[n];
-    int arr2[n];
+    if (!(cin >> n) || n <= 0) {
+        return 0;
+    }
+    vector<int> arr1(n);
+    vector<int> arr2(n);
     cout << "Enter the elements in the first array: ";
     for (int i = 0; i < n; i++) {
         cin >> arr1[i];
@@ -24,7 +27,7 @@ int main() {
         cout << arr2[i] << " ";
     }
     cout << endl;
-    int arr3[n];
+    vector<int> arr3(n);
     for (int i = 0; i < n; i++) {
         arr3[i] = arr1[i] + arr2[i];
     }

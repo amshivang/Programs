@@ -1,12 +1,12 @@
 import java.util.*;
 
-public class Yesoryes
+public class yesoryes
 {
 	
 	public static void main(String[] args)
 	{
 		Scanner in = new Scanner(System.in);
-		Yesoryes o = new Yesoryes();
+		yesoryes o = new yesoryes();
 		int n;
 		n = in.nextInt();
 		while(n-- > 0){

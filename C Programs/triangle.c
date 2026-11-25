@@ -1,8 +1,24 @@
-- Definition of wave and wave motion
-- Difference between longitudinal and transverse waves
-- Nature and properties of electromagnetic waves
-- Reflection, refraction, polarization and diffraction of light
-- Refractive index and total internal reflection of light
-- Microscopes and astronomical telescopes (reflecting and refracting) and their magnifying powers
-- Physical and chromatic aberrations
-- Propagation of sound wave and their properties
+#include <stdio.h>
+
+int main(void) {
+    double a, b, c;
+    printf("Enter three sides of the triangle: ");
+    if (scanf("%lf %lf %lf", &a, &b, &c) != 3 || a <= 0 || b <= 0 || c <= 0) {
+        printf("Invalid side lengths.\n");
+        return 1;
+    }
+
+    if (a + b <= c || a + c <= b || b + c <= a) {
+        printf("The given sides do not form a valid triangle.\n");
+        return 0;
+    }
+
+    if (a == b && b == c) {
+        printf("Equilateral triangle\n");
+    } else if (a == b || b == c || a == c) {
+        printf("Isosceles triangle\n");
+    } else {
+        printf("Scalene triangle\n");
+    }
+    return 0;
+}

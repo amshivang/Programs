@@ -33,14 +33,15 @@ def generate_bill(*args, **kwargs):
         
     print(f'Final Payable Amount: {total_bill - discount:.2f}')
 
-num_items = int(input('Enter number of items: '))
-prices = []
-quantities = {}
-for i in range(1, num_items + 1):
-    name = input(f'Enter item {i} name: ').strip()
-    price = float(input(f'Enter unit price for {name}: '))
-    qty = int(input(f'Enter quantity for {name}: '))
-    prices.append(price)
-    quantities[name] = qty
-    
-generate_bill(*prices, **quantities)
+if __name__ == '__main__':
+    num_items = int(input('Enter number of items: '))
+    prices = []
+    quantities = {}
+    for i in range(1, num_items + 1):
+        name = input(f'Enter item {i} name: ').strip()
+        price = float(input(f'Enter unit price for {name}: '))
+        qty = int(input(f'Enter quantity for {name}: '))
+        prices.append(price)
+        quantities[name] = qty
+
+    generate_bill(*prices, **quantities)

@@ -47,9 +47,9 @@ Each subdirectory contains its own standalone catalog and implementation index:
 
 | Module / Directory | Primary Language | Core Conceptual Topics | Program Count |
 | :--- | :--- | :--- | :---: |
-| [**`C Programs/`**](./C%20Programs/README.md) | **C** (C11) | Memory pointers, array manipulation, control flow, arithmetic series, recursion | **25** |
-| [**`C++ Programs/`**](./C++%20Programs/README.md) | **C++** (C++17) | OOP abstractions, operator overloading, inheritance hierarchies, streams | **25** |
-| [**`DSA/`**](./DSA/README.md) | **C++ / C** | Sorting (Bubble, Quick, Merge, Selection), searching, linked structures, stacks | **18** |
+| [**`C Programs/`**](./C%20Programs/README.md) | **C** (C11) | Memory pointers, array manipulation, control flow, arithmetic series, recursion | **26** |
+| [**`C++ Programs/`**](./C++%20Programs/README.md) | **C++** (C++17) | OOP abstractions, operator overloading, inheritance hierarchies, streams | **27** |
+| [**`DSA/`**](./DSA/README.md) | **C++** (C++17) | Sorting (Bubble, Quick, Merge, Selection), searching, linked structures, stacks | **18** |
 | [**`Java Programs/`**](./Java%20Programs/README.md) | **Java** (JDK 17+) | Class inheritance, string comparisons, math algorithms, exception handling | **8** |
 | [**`Python Programs/`**](./Python%20Programs/README.md) | **Python** (3.x) | Matrix algorithms, string manipulations, pattern generators, discrete math | **83** |
 
@@ -58,30 +58,30 @@ Each subdirectory contains its own standalone catalog and implementation index:
 ## 🛠️ Compilation & Execution Guide
 
 ### 1. C Programs
-Compile using GCC with standard C11 flags:
+Compile using GCC with standard C11 flags (link math library `-lm` on Linux):
 ```bash
-gcc -std=c11 "C Programs/factorial.c" -o factorial
+gcc -std=c11 "C Programs/factorial.c" -lm -o factorial
 ./factorial
 ```
 
 ### 2. C++ Programs & DSA
 Compile using G++ with modern C++ standards:
 ```bash
-g++ -std=c++17 "C++ Programs/complex_numbers.cpp" -o complex
-./complex
+g++ -std=c++17 "C++ Programs/Account.cpp" -o account
+./account
 ```
 
 ### 3. Java Programs
 Compile and execute using modern JDK tooling:
 ```bash
-javac "Java Programs/Quadratic.java"
-java -cp "Java Programs" Quadratic
+javac "Java Programs/root.java"
+java -cp "Java Programs" root
 ```
 
 ### 4. Python Programs
 Execute directly using Python 3 runtime:
 ```bash
-python "Python Programs/armstrong.py"
+python "Python Programs/armstrong_number.py"
 ```
 
 ---
@@ -90,8 +90,8 @@ python "Python Programs/armstrong.py"
 
 ```
 Programs/
-├── C Programs/              # 25 C assignments (pointers, control flow, math)
-├── C++ Programs/            # 25 C++ OOP programs (classes, constructors, polymorphism)
+├── C Programs/              # 26 C assignments (pointers, control flow, math)
+├── C++ Programs/            # 27 C++ OOP programs (classes, constructors, polymorphism)
 ├── DSA/                     # 18 Data Structures & Algorithms implementations
 ├── Java Programs/           # 8 Java object-oriented and algorithmic solutions
 ├── Python Programs/         # 83 Python logic exercises, patterns & utilities
